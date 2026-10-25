@@ -1,0 +1,804 @@
+body{
+    font-family: Arial, sans-serif;
+    margin-bottom: 0;
+    background-color: #f5f7fa;
+    color: #123b5d;
+}
+
+nav{
+    background-color: #123b5d;
+    padding: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 42px;
+    margin: 30px 20px;
+}
+
+h2, p, ul{
+margin-left: 20px;
+}
+
+h2{
+    color: #19a7a1;
+}
+
+li{
+    margin-bottom: 10px;
+}
+a:hover{
+color: #19a7a1;
+}
+
+ul a{
+    color: #123b5d;
+    text-decoration: none;
+}
+
+ul a:hover{
+    color: #19a7a1
+     }
+
+     .banner {
+    background-image:linear-gradient(
+        rgba(18, 59, 93, 0.55),
+        rgba(18, 59, 93, 0.55)
+    ),
+     url("https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1200&q=80");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 320px;
+    padding: 70px 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+}
+
+.banner h2 {
+    color: white;
+    font-size: 36px;
+    margin: 0 0 10px;
+}
+
+.banner p {
+    color: white;
+    margin-bottom: 25px;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #19a7a1;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.botao:hover {
+    background-color: #12817d;
+}
+
+.cartao-destino{
+    background-color: #d6f0f0;
+    padding:15px;
+    border-radius:8px;
+    margin-bottom:12px;
+    flex: 1 1 200px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+ul{
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.cartao-destino:hover{
+    background-color: #d6f0f0;
+    transform: translateY(-5px);
+    filter: brightness(0.8);
+}
+
+
+.galeria {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.galeria h2 {
+    color: #164E63;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.galeria > p {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+
+.fotos-galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.foto {
+    background-color: #D6F0F0;
+    border-radius: 12px;
+    overflow: hidden;
+    flex: 1 1 250px;
+    max-width: 320px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.foto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.foto h3 {
+    color: #164E63;
+    margin: 15px 10px 8px;
+}
+
+.foto p {
+    color: #444;
+    padding: 0 12px 15px;
+    margin: 0;
+}
+
+.foto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+@media (max-width: 600px) {
+    .galeria {
+        padding: 30px 12px;
+    }
+
+    .foto {
+        flex-basis: 100%;
+    }
+}
+
+.porque-viaje {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.porque-viaje h2,
+.inspire-se h2 {
+    color: #164E63;
+    margin-bottom: 25px;
+}
+
+.vantagens {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.vantagem {
+    background-color: #D6F0F0;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1 1 200px;
+    max-width: 300px;
+}
+
+.vantagem h3 {
+    color: #164E63;
+}
+
+.vantagem p {
+    color: #444;
+    line-height: 1.6;
+}
+
+.inspire-se {
+    background-color: #EAF6F6;
+    padding: 45px 20px;
+    text-align: center;
+}
+
+.inspire-se p {
+    color: #444;
+    margin-bottom: 25px;
+}
+
+.botao-galeria {
+    display: inline-block;
+    background-color: #164E63;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.botao-galeria:hover {
+    background-color: #247A83;
+}
+
+
+.rodape {
+    background-color: #164E63;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.rodape h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.rodape p {
+    line-height: 1.6;
+}
+
+.copyright {
+    margin-top: 25px;
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+.pagina-contato {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 25px;
+}
+
+.pagina-contato form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pagina-contato label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.pagina-contato input,
+.pagina-contato select,
+.pagina-contato textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.pagina-contato button {
+    background-color: #164E63;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.pagina-contato button:hover {
+    background-color: #247A83;
+}
+
+.pagina-galeria footer{
+    margin-bottom: 60px;
+}
+.foto1 img{
+    width : 250px;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+}
+
+.foto1{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.foto1 p{
+    flex: 1;
+}
+
+.foto1{
+    background-color: #D6F0F0;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px 0;
+}
+
+.RJ h3{
+    font-size: xx-large;
+     margin-top: 35px;
+    margin-bottom: 20px;
+    color: #164E63;
+    border-left: 5px solid #247A8324;
+    padding-left: 12px;
+}
+
+.comeco{
+    font-size: 20px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.foto2 img{
+ width : 250px;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+}
+
+.foto2{
+     display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.foto2 p{
+    flex: 1;
+}
+
+.foto2{
+  background-color: #D6F0F0;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px 0;   
+}
+.Lage{
+font-size: 20px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+text-align: center;
+}
+.pao{
+    font-size: 20px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+text-align: center;
+}
+
+.foto3 img{
+width : 250px;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+}
+
+.foto3{
+  display: flex;
+    align-items: center;
+    gap: 20px;  
+}
+
+.foto3 p{
+    flex: 1;
+}
+
+.foto3{
+     background-color: #D6F0F0;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px 0; 
+}
+.Cristo{
+    font-size: 20px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+text-align: center; 
+}
+
+.CL h3{
+    font-size: xx-large;
+     margin-top: 35px;
+    margin-bottom: 20px;
+    color: #164E63;
+    border-left: 5px solid #247A8324;
+    padding-left: 12px;
+}
+.comecoCL{
+    font-size: 20px;
+}
+.CL h4{
+     font-size: 20px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+text-align: center; 
+}
+
+.foto4 img{
+width : 250px;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+}
+.foto4{
+display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.foto4 p{
+    flex: 1;
+}
+
+.foto4{
+    background-color: #D6F0F0;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px 0; 
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.foto5 img{
+    width : 250px;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+}
+
+.foto5{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.foto5 p {
+flex: 1;
+}
+
+.foto5{
+     background-color: #D6F0F0;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px 0;
+}
+
+.foto6 img{
+    width : 250px;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+}
+
+.foto6{
+  display: flex;
+    align-items: center;
+    gap: 20px;  
+}
+
+.foto6 p {
+    flex: 1;
+}
+
+.foto6{
+     background-color: #D6F0F0;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px 0;
+}
+
+.PE h3{
+    font-size: xx-large;
+     margin-top: 35px;
+    margin-bottom: 20px;
+    color: #164E63;
+    border-left: 5px solid #247A8324;
+    padding-left: 12px;
+}
+.comecoPE{
+    font-size: 20px;
+}
+.PE h4{
+     font-size: 20px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+text-align: center;
+}
+
+.foto7 img{
+     width : 250px;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+}
+
+.foto7{
+     display: flex;
+    align-items: center;
+    gap: 20px;  
+}
+
+.foto7 p{
+    flex: 1;
+}
+
+.foto7{
+     background-color: #D6F0F0;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px 0; 
+}
+
+.foto8 img{
+  width : 250px;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+}
+
+.foto8{
+     display: flex;
+    align-items: center;
+    gap: 20px;  
+}
+
+.foto8 p{
+    flex: 1;
+}
+
+.foto8{
+    background-color: #D6F0F0;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px 0;
+}
+
+.foto9 img{
+    width : 250px;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+}
+
+.foto9{
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+.foto9 p{
+    flex: 1;
+}
+
+.foto9{
+    background-color: #D6F0F0;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px 0;
+}
+
+.AR h3{
+    font-size: xx-large;
+     margin-top: 35px;
+    margin-bottom: 20px;
+    color: #164E63;
+    border-left: 5px solid #247A8324;
+    padding-left: 12px;
+}
+.AR h4{
+    font-size: 20px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+text-align: center;
+}
+.comecoAR{
+    font-size: 20px;
+}
+
+.foto10 img{
+     width : 250px;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+ }
+.foto10{
+ display: flex;
+    align-items: center;
+    gap: 20px;  
+}
+
+.foto10 p{
+    flex: 1;
+}
+
+.foto10{
+     background-color: #D6F0F0;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px 0;
+}
+
+.foto11 img{
+ width : 250px;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+}
+
+.foto11{
+     display: flex;
+    align-items: center;
+    gap: 20px;  
+}
+
+.foto11 p{
+  flex: 1;
+ }
+
+ .foto11{
+     background-color: #D6F0F0;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px 0;
+ }
+
+ .foto12 img{
+   width : 250px;
+    height: auto;
+    display: block;
+    border-radius: 15px; 
+ }
+
+ .foto12{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+ }
+
+ .foto12 p{
+    flex: 1;
+ }
+
+ .foto12{
+    background-color: #D6F0F0;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px 0;
+ }
+
+ .CO h3{
+    font-size: xx-large;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    color: #164E63;
+    border-left: 5px solid #247A8324;
+    padding-left: 12px;
+ }
+ .CO h4{
+     font-size: 20px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+text-align: center;
+ }
+ .comecoCO{
+    font-size: 20px;
+ }
+
+ .foto13 img{
+   width : 250px;
+    height: auto;
+    display: block;
+    border-radius: 15px; 
+ }
+
+ .foto13{
+display: flex;
+    align-items: center;
+    gap: 20px; 
+ }
+
+ .foto13 p{
+flex: 1;
+ }
+
+ .foto13{
+     background-color: #D6F0F0;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px 0;
+ }
+ html{
+    scroll-behavior: smooth; 
+ }
+
+ .foto14 img{
+    width : 250px;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+ }
+
+ .foto14{
+  display: flex;
+    align-items: center;
+    gap: 20px;   
+ }
+
+ .foto14 p{
+    flex: 1;
+ }
+
+ .foto14{
+    background-color: #D6F0F0;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px 0;
+ }
+
+ .foto15 img{
+    width: 250px;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+ }
+
+ .foto15{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+ }
+
+ .foto15 p{
+    flex: 1;
+ }
+
+ .foto15{
+    background-color: #D6F0F0;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px 0;
+ }
+
+ .frase{
+    font-size: 20px;
+ }
+
+.botao-Inicio {
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #164E63;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    text-align: center;
+}
