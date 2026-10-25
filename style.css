@@ -802,3 +802,30 @@ flex: 1;
     border-radius: 10px;
     text-align: center;
 }
+
+* {
+  box-sizing: border-box;
+  }
+
+img {
+max-width: 100%;
+height: auto;
+}
+
+@media (max-width: 600px) {
+nav {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 12px;
+}
+
+nav a {
+    font-size: 14px;
+}
+
+main {
+    padding: 12px;
+}
+
+}
